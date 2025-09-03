@@ -1,0 +1,23 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./basketball.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Team {
+  id           Int    @id @default(autoincrement())
+  name         String @unique
+  city         String
+  year_founded Int 
+}
+
+model Player {
+  id           Int    @id @default(autoincrement())
+  name         String
+  draft_year   Int
+  draft_round  Int
+  draft_number Int
+}
