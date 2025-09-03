@@ -1,6 +1,6 @@
 ## Description
 
-Simple extensible backend writen with nest.js 
+Simple extensible backend written with nest.js 
 For now db is not finished and it simply has teams and players table. 
 
 ## Usage 
